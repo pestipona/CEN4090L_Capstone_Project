@@ -96,92 +96,62 @@
       </div>
     </div>
     <main class="page-wrapper">
-      <!-- Navbar for Food Delivery Service demo-->
+      <!-- Navbar-->
       <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page.-->
-      <header class="navbar d-block navbar-sticky navbar-expand-lg navbar-light bg-light">
-        <div class="container"><a class="navbar-brand d-none d-sm-block me-4 order-lg-1" href="index.html"><img src="img/logo-dark.png" width="142" alt="Cartzilla"></a><a class="navbar-brand d-sm-none me-2 order-lg-1" href="index.html"><img src="img/logo-icon.png" width="74" alt="Cartzilla"></a>
-          <div class="navbar-toolbar d-flex align-items-center order-lg-3">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"><span class="navbar-toggler-icon"></span></button><a class="navbar-tool d-none d-lg-flex" href="javascript:void(0)" data-bs-toggle="collapse" data-bs-target="#searchBox" role="button" aria-expanded="false" aria-controls="searchBox"><span class="navbar-tool-tooltip">Search</span>
-              <div class="navbar-tool-icon-box"><i class="navbar-tool-icon ci-search"></i></div></a><a class="navbar-tool ms-2" href="#signin-modal" data-bs-toggle="modal"><span class="navbar-tool-tooltip">Account</span>
-              <div class="navbar-tool-icon-box"><i class="navbar-tool-icon ci-user"></i></div></a>
-          </div>
-          <div class="collapse navbar-collapse me-auto order-lg-2" id="navbarCollapse">
-            <!-- Search (mobile)-->
-            <div class="d-lg-none py-3">
-              <div class="input-group"><i class="ci-search position-absolute top-50 start-0 translate-middle-y ms-3"></i>
-                <input class="form-control rounded-start" type="text" placeholder="What do you need?">
-              </div>
-            </div>
-            <!-- Location dropdown-->
-            <ul class="navbar-nav navbar-mega-nav ms-lg-4 pe-lg-2 me-lg-2">
-              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-lg-0" href="#" data-bs-toggle="dropdown"><i class="ci-location me-2"></i>New York</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Los Angeles</a></li>
-                  <li><a class="dropdown-item" href="#">Chicago</a></li>
-                  <li><a class="dropdown-item" href="#">Houston</a></li>
-                  <li><a class="dropdown-item" href="#">Philadelphia</a></li>
-                  <li><a class="dropdown-item" href="#">San Diego</a></li>
-                  <li><a class="dropdown-item" href="#">Miami</a></li>
-                </ul>
-              </li>
-            </ul>
-            <!-- Primary menu-->
-            <ul class="navbar-nav">
-              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Cuisine</a>
-                <div class="dropdown-menu px-2 ps-0 pb-4">
-                  <div class="d-flex">
-                    <div class="mega-dropdown-column pt-4 px-3" style="width: 12rem;">
-                      <div class="widget mb-3"><a class="d-block" href="food-delivery-category.html"><img class="d-block mx-auto mb-3" src="img/boarding/icons/burger.svg" width="60" alt="Burgers &amp; Fries">
-                          <h6 class="fs-base text-center">Burgers &amp; Fries</h6></a></div>
-                    </div>
-                    <div class="mega-dropdown-column pt-4 px-3" style="width: 12rem;">
-                      <div class="widget mb-3"><a class="d-block" href="food-delivery-category.html"><img class="d-block mx-auto mb-3" src="img/boarding/icons/noodles.svg" width="60" alt="Noodles">
-                          <h6 class="fs-base text-center">Noodles</h6></a></div>
-                    </div>
-                    <div class="mega-dropdown-column pt-4 px-3" style="width: 12rem;">
-                      <div class="widget mb-3"><a class="d-block" href="food-delivery-category.html"><img class="d-block mx-auto mb-3" src="img/boarding/icons/pizza.svg" width="60" alt="Pizza &amp; Pasta">
-                          <h6 class="fs-base text-center">Pizza &amp; Pasta</h6></a></div>
-                    </div>
-                  </div>
-                  <div class="d-flex">
-                    <div class="mega-dropdown-column pt-4 px-3" style="width: 12rem;">
-                      <div class="widget mb-3"><a class="d-block" href="food-delivery-category.html"><img class="d-block mx-auto mb-3" src="img/boarding/icons/steak.svg" width="60" alt="Grill &amp; Steaks">
-                          <h6 class="fs-base text-center">Grill &amp; Steaks</h6></a></div>
-                    </div>
-                    <div class="mega-dropdown-column pt-4 px-3" style="width: 12rem;">
-                      <div class="widget mb-3"><a class="d-block" href="food-delivery-category.html"><img class="d-block mx-auto mb-3" src="img/boarding/icons/fish.svg" width="60" alt="Fish &amp; Seafood">
-                          <h6 class="fs-base text-center">Fish &amp; Seafood</h6></a></div>
-                    </div>
-                    <div class="mega-dropdown-column pt-4 px-3" style="width: 12rem;">
-                      <div class="widget mb-3"><a class="d-block" href="food-delivery-category.html"><img class="d-block mx-auto mb-3" src="img/boarding/icons/healthy.svg" width="60" alt="Healthy Food">
-                          <h6 class="fs-base text-center">Healthy Food</h6></a></div>
-                    </div>
-                  </div>
-                  <div class="d-flex">
-                    <div class="mega-dropdown-column pt-4 px-3" style="width: 12rem;">
-                      <div class="widget mb-3"><a class="d-block" href="food-delivery-category.html"><img class="d-block mx-auto mb-3" src="img/boarding/icons/cuisine.svg" width="60" alt="Haute Cuisine">
-                          <h6 class="fs-base text-center">Haute Cuisine</h6></a></div>
-                    </div>
-                    <div class="mega-dropdown-column pt-4 px-3" style="width: 12rem;">
-                      <div class="widget mb-3"><a class="d-block" href="food-delivery-category.html"><img class="d-block mx-auto mb-3" src="img/boarding/icons/chicken.svg" width="60" alt="Chicken &amp; Snaks">
-                          <h6 class="fs-base text-center">Chicken &amp; Snaks</h6></a></div>
-                    </div>
-                    <div class="mega-dropdown-column pt-4 px-3" style="width: 12rem;">
-                      <div class="widget mb-3"><a class="d-block" href="food-delivery-category.html"><img class="d-block mx-auto mb-3" src="img/boarding/icons/coffee.svg" width="60" alt="Coffee &amp; Desserts">
-                          <h6 class="fs-base text-center">Coffee &amp; Desserts</h6></a></div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="nav-item"><a class="nav-link" href="index.html">Back to main demo</a></li>
-            </ul>
-          </div>
-        </div>
-        <!-- Search collapse-->
-        <div class="search-box collapse" id="searchBox">
-          <div class="container py-2">
-            <div class="input-group"><i class="ci-search position-absolute top-50 start-0 translate-middle-y ms-3"></i>
-              <input class="form-control rounded-start" type="text" placeholder="What do you need?">
+      <header class="bg-light shadow-sm navbar-sticky">
+        <div class="navbar navbar-expand-lg navbar-light">
+          <div class="container"><a class="navbar-brand d-none d-sm-block me-4 order-lg-1" href="index.html"><img src="img/logo-dark.png" width="142" alt="Cartzilla"></a><a class="navbar-brand d-sm-none me-2 order-lg-1" href="index.html"><img src="img/logo-icon.png" width="74" alt="Cartzilla"></a>
+            <div class="collapse navbar-collapse me-auto order-lg-2" id="navbarCollapse">
+              <hr class="my-3">
+              <!-- Primary menu-->
+              <ul class="navbar-nav">
+                <li class="nav-item active"><a class="nav-link dropdown-toggle" href="home-pet-boarding.html">Boarding</a></li>
+                <li class="nav-item active"><a class="nav-link dropdown-toggle" href="home-pet-grooming.html">Grooming</a></li>
+                <li class="nav-item active"><a class="nav-link dropdown-toggle" href="home-pet-training.html">Pet Training</a></li>
+                <li class="nav-item active"><a class="nav-link dropdown-toggle" href="home-vet-care.html">Vet Care</a></li>
+                <li class="nav-item active"><a class="nav-link dropdown-toggle" href="home-pet-adoption.html">Adoption</a></li>
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">Account</a>
+                  <ul class="dropdown-menu">
+                    <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown">Shop User Account</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="account-orders.html">Orders History</a></li>
+                        <li><a class="dropdown-item" href="account-profile.html">Profile Settings</a></li>
+                        <li><a class="dropdown-item" href="account-address.html">Account Addresses</a></li>
+                        <li><a class="dropdown-item" href="account-payment.html">Payment Methods</a></li>
+                      </ul>
+                    </li>
+                    <li><a class="dropdown-item" href="account-signin.html">Sign In / Sign Up</a></li>
+                    <li><a class="dropdown-item" href="account-password-recovery.html">Password Recovery</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Documents</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="docs/dev-setup.html">
+                      <div class="d-flex">
+                        <div class="lead text-muted pt-1"><i class="ci-book"></i></div>
+                        <div class="ms-2"><span class="d-block text-heading">Documentation</span><small class="d-block text-muted">Kick-start customization</small></div>
+                      </div></a></li>
+                    <li class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="components/typography.html">
+                      <div class="d-flex">
+                        <div class="lead text-muted pt-1"><i class="ci-server"></i></div>
+                        <div class="ms-2"><span class="d-block text-heading">Components<span class="badge bg-info ms-2">40+</span></span><small class="d-block text-muted">Faster page building</small></div>
+                      </div></a></li>
+                    <li class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="docs/changelog.html">
+                      <div class="d-flex">
+                        <div class="lead text-muted pt-1"><i class="ci-edit"></i></div>
+                        <div class="ms-2"><span class="d-block text-heading">Changelog<span class="badge bg-success ms-2">v2.5.1</span></span><small class="d-block text-muted">Regular updates</small></div>
+                      </div></a></li>
+                    <li class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="mailto:support@createx.studio">
+                      <div class="d-flex">
+                        <div class="lead text-muted pt-1"><i class="ci-help"></i></div>
+                        <div class="ms-2"><span class="d-block text-heading">Support</span><small class="d-block text-muted">support@createx.studio</small></div>
+                      </div></a></li>
+                  </ul>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -191,11 +161,8 @@
         <div class="container pb-5">
           <div class="row justify-content-center pb-5">
             <div class="col-xl-6 col-lg-7 col-md-8 col-sm-10 text-center">
-              <h5 class="text-light fw-light">#1 Food Delivery Service since 2010</h5>
-              <div class="h1 text-light mb-3 pb-4">We deliver your favorite food fresh &amp; fast in
-                <div class="dropdown d-inline-block ms-1"><a class="dropdown-toggle" href="#" data-bs-toggle="dropdown">New York</a>
-                  <div class="dropdown-menu dropdown-menu-end"><a class="dropdown-item fs-base" href="#">Los Angeles</a><a class="dropdown-item fs-base" href="#">Chicago</a><a class="dropdown-item fs-base" href="#">Houston</a><a class="dropdown-item fs-base" href="#">Philadelphia</a><a class="dropdown-item fs-base" href="#">San Diego</a><a class="dropdown-item fs-base" href="#">Miami</a></div>
-                </div>
+              <h5 class="text-light fw-light">#1 Pet Boarding Service since 2010</h5>
+              <div class="h1 text-light mb-3 pb-4">Welcome to PetBoarder where your furry friend's home away from home
               </div><a class="btn btn-primary" href="#cuisine" data-scroll>What do you want to eat?</a>
             </div>
           </div>
@@ -203,7 +170,7 @@
       </section>
       <!-- Room Options grid-->
       <section class="container py-4 my-lg-3 py-sm-5" id="cuisine">
-        <h2 class="text-center pt-4 pt-sm-3">Our different room options</h2>
+        <h2 class="text-center pt-4 pt-sm-3">Choose from our different room options</h2>
         <p class="text-muted text-center mb-5">Choose among our different comfy accommodations for your pet</p>
         <div class="row">
           <div class="col-md-4 col-sm-6 mb-grid-gutter"><a class="card border-0 shadow" href="food-delivery-category.html"><img class="card-img-top" src="img/boarding/category/private.jpg" alt="Private Suite">
