@@ -3,10 +3,6 @@
   <head>
     <meta charset="utf-8">
     <title>Pet Boarder | Boarding</title>
-    <!-- SEO Meta Tags-->
-    <meta name="description" content="Cartzilla - Bootstrap E-commerce Template">
-    <meta name="keywords" content="bootstrap, shop, e-commerce, market, modern, responsive,  business, mobile, bootstrap, html5, css3, js, gallery, slider, touch, creative, clean">
-    <meta name="author" content="Createx Studio">
     <!-- Viewport-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Favicon and Touch Icons-->
@@ -23,78 +19,9 @@
     <!-- Main Theme Styles + Bootstrap-->
     <link rel="stylesheet" media="screen" href="css/theme.min.css">
   </head>
+
   <!-- Body-->
   <body class="handheld-toolbar-enabled">
-    <!-- Sign in / sign up modal-->
-    <div class="modal fade" id="signin-modal" tabindex="-1" role="dialog">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header bg-secondary">
-            <ul class="nav nav-tabs card-header-tabs" role="tablist">
-              <li class="nav-item"><a class="nav-link fw-medium active" href="#signin-tab" data-bs-toggle="tab" role="tab" aria-selected="true"><i class="ci-unlocked me-2 mt-n1"></i>Sign in</a></li>
-              <li class="nav-item"><a class="nav-link fw-medium" href="#signup-tab" data-bs-toggle="tab" role="tab" aria-selected="false"><i class="ci-user me-2 mt-n1"></i>Sign up</a></li>
-            </ul>
-            <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body tab-content py-4">
-            <form class="needs-validation tab-pane fade show active" autocomplete="off" novalidate id="signin-tab">
-              <div class="mb-3">
-                <label class="form-label" for="si-email">Email address</label>
-                <input class="form-control" type="email" id="si-email" placeholder="johndoe@example.com" required>
-                <div class="invalid-feedback">Please provide a valid email address.</div>
-              </div>
-              <div class="mb-3">
-                <label class="form-label" for="si-password">Password</label>
-                <div class="password-toggle">
-                  <input class="form-control" type="password" id="si-password" required>
-                  <label class="password-toggle-btn" aria-label="Show/hide password">
-                    <input class="password-toggle-check" type="checkbox"><span class="password-toggle-indicator"></span>
-                  </label>
-                </div>
-              </div>
-              <div class="mb-3 d-flex flex-wrap justify-content-between">
-                <div class="form-check mb-2">
-                  <input class="form-check-input" type="checkbox" id="si-remember">
-                  <label class="form-check-label" for="si-remember">Remember me</label>
-                </div><a class="fs-sm" href="#">Forgot password?</a>
-              </div>
-              <button class="btn btn-primary btn-shadow d-block w-100" type="submit">Sign in</button>
-            </form>
-            <form class="needs-validation tab-pane fade" autocomplete="off" novalidate id="signup-tab">
-              <div class="mb-3">
-                <label class="form-label" for="su-name">Full name</label>
-                <input class="form-control" type="text" id="su-name" placeholder="John Doe" required>
-                <div class="invalid-feedback">Please fill in your name.</div>
-              </div>
-              <div class="mb-3">
-                <label for="su-email">Email address</label>
-                <input class="form-control" type="email" id="su-email" placeholder="johndoe@example.com" required>
-                <div class="invalid-feedback">Please provide a valid email address.</div>
-              </div>
-              <div class="mb-3">
-                <label class="form-label" for="su-password">Password</label>
-                <div class="password-toggle">
-                  <input class="form-control" type="password" id="su-password" required>
-                  <label class="password-toggle-btn" aria-label="Show/hide password">
-                    <input class="password-toggle-check" type="checkbox"><span class="password-toggle-indicator"></span>
-                  </label>
-                </div>
-              </div>
-              <div class="mb-3">
-                <label class="form-label" for="su-password-confirm">Confirm password</label>
-                <div class="password-toggle">
-                  <input class="form-control" type="password" id="su-password-confirm" required>
-                  <label class="password-toggle-btn" aria-label="Show/hide password">
-                    <input class="password-toggle-check" type="checkbox"><span class="password-toggle-indicator"></span>
-                  </label>
-                </div>
-              </div>
-              <button class="btn btn-primary btn-shadow d-block w-100" type="submit">Sign up</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
     <main class="page-wrapper">
       <!-- Navbar-->
       <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page.-->
@@ -156,6 +83,7 @@
           </div>
         </div>
       </header>
+
       <!-- Hero section-->
       <section class="bg-darker bg-size-cover bg-position-center py-5 py-lg-10" style="background-image: url(img/boarding/hero-bg.jpg);">
         <div class="container pb-5">
@@ -163,13 +91,51 @@
             <div class="col-xl-6 col-lg-7 col-md-8 col-sm-10 text-center">
               <h5 class="text-light fw-light">#1 Pet Boarding Service since 2010</h5>
               <div class="h1 text-light mb-3 pb-4">Welcome to PetBoarder where your furry friend's home away from home
-              </div><a class="btn btn-primary" href="#cuisine" data-scroll>Schedule your reservation</a>
             </div>
           </div>
         </div>
       </section>
+
+      <!-- pet Boarding Schedule -->
+      <section class="container pb-4 pt-2 pt-sm-0 pt-md-2 pb-sm-5">
+        <h2 class="text-center pt-4 pt-sm-3">Hotel Reservation</h2>
+        <form>
+          <div class="row align-items-end">
+            <div class="col-md-3">
+              <div class="form-group">
+                <label for="checkin">Check-in Date:</label>
+                <input type="date" class="form-control" id="checkin">
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="form-group">
+                <label for="checkout">Check-out Date:</label>
+                <input type="date" class="form-control" id="checkout">
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="form-group">
+                <label for="guests">Number of Guests:</label>
+                <select class="form-control" id="guests">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <!-- Add more options as needed -->
+                </select>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="form-group d-flex align-items-end">
+                <button type="submit" class="btn btn-primary btn-block">Submit</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </section>
+
       <!-- Room Options grid-->
-      <section class="container py-4 my-lg-3 py-sm-5" id="cuisine">
+      <section class="container py-4 my-lg-3 py-sm-5" id="boarding">
         <h2 class="text-center pt-4 pt-sm-3">Choose from our different room options</h2>
         <p class="text-muted text-center mb-5">Choose among our different comfy accommodations for your pet</p>
         <div class="row">
@@ -217,6 +183,7 @@
             </div></a></div>
         </div>
       </section>
+
       <!-- Popular overnight logo grid-->
       <section class="container pb-4 pt-2 pt-sm-0 pt-md-2 pb-sm-5">
         <h2 class="text-center">Overnight stays include:</h2>
@@ -237,6 +204,7 @@
           <div class="col-md-3 col-sm-4 col-6"><a class="d-block bg-white shadow-sm rounded-3 py-3 py-sm-4 mb-grid-gutter" href="food-delivery-single.html"><img class="d-block mx-auto" src="img/boarding/overnight/icons/requirements.jpg" style="width: 150px;" alt="Brand"></a><p class="text-muted text-center mb-5">Requirements</p></div>
         </div>
       </section>
+
       <!-- Reviews-->
       <section class="bg-secondary py-5">
         <div class="container py-md-4 pt-3 pb-0 py-sm-3">
@@ -326,6 +294,7 @@
         </div>
       </section>
     </main>
+
     <!-- Footer-->
     <footer class="footer bg-darker pt-5">
       <div class="container pt-2">
@@ -400,16 +369,15 @@
         </div>
       </div>
     </footer>
-    <!-- Toolbar for handheld devices (Food delivery)-->
-    <div class="handheld-toolbar">
-      <div class="d-table table-layout-fixed w-100"><a class="d-table-cell handheld-toolbar-item" href="#signin-modal" data-bs-toggle="modal"><span class="handheld-toolbar-icon"><i class="ci-user"></i></span><span class="handheld-toolbar-label">Account</span></a><a class="d-table-cell handheld-toolbar-item" href="javascript:void(0)" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" onclick="window.scrollTo(0, 0)"><span class="handheld-toolbar-icon"><i class="ci-menu"></i></span><span class="handheld-toolbar-label">Menu</span></a><a class="d-table-cell handheld-toolbar-item" href="food-delivery-cart.html"><span class="handheld-toolbar-icon"><i class="ci-cart"></i><span class="badge bg-primary rounded-pill ms-1">3</span></span><span class="handheld-toolbar-label">$24.00</span></a></div>
-    </div>
+
     <!-- Back To Top Button--><a class="btn-scroll-top" href="#top" data-scroll><span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span><i class="btn-scroll-top-icon ci-arrow-up">   </i></a>
-    <!-- Vendor scrits: js libraries and plugins-->
+
+    <!-- Vendor scripts: js libraries and plugins-->
     <script src="vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="vendor/simplebar/dist/simplebar.min.js"></script>
     <script src="vendor/tiny-slider/dist/min/tiny-slider.js"></script>
     <script src="vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
     <!-- Main theme script-->
     <script src="js/theme.min.js"></script>
   </body>
