@@ -26,7 +26,7 @@ Enable Nginx to start on boot:
 sudo systemctl enable nginx
 ```
 
-3. Configure Nginx for Your Node.js Application:
+3. **Configure Nginx for Your `Node.js` Application:**
 
 Create or modify an **Nginx server block configuration**. A common practice is to create a new **configuration file** for **each site** in `/etc/nginx/sites-available/` and then create a **_symbolic link_** to it in `/etc/nginx/sites-enabled/`.
 
@@ -61,3 +61,35 @@ server {
 ```text
 sudo ln -s /etc/nginx/sites-available/my-node-app /etc/nginx/sites-enabled/
 ```
+
+4. **Test Nginx Configuration:**
+
+Before applying the changes, you should check the configuration for syntax errors:
+
+```text
+sudo nginx -t
+```
+
+If everything is okay, you should see a **message** indicating that the **configuration test** is **successful**.
+
+5. **Restart Nginx:**
+
+* Apply the **configuration changes** by restarting Nginx:
+
+```text
+sudo systemctl restart nginx
+```
+
+6. **Update Security Groups:**
+
+* Ensure that your EC2 instance's security group allows incoming traffic on port 80 (for HTTP) and 443 (for HTTPS, if you're planning on setting up SSL).
+
+7. **Start Your Node.js Application:**
+
+* Run your `Node.js` application, ensuring it's listening on the **port** specified in the **Nginx configuration** (in this example, port `3000`).
+
+8. (Optional) Set Up SSL:
+
+* If you want to serve your application over HTTPS, you can use `Certbot` to obtain a free **SSL certificate** from `Let's Encrypt`. `Certbot` has **plugins** that work with `Nginx`, making it easy to **obtain** and **install certificates**.
+
+By now, you should be **able to access** your `Node.js` **application** through your **domain** *without specifying the port*, and `Nginx` will **proxy the requests** to your `Node.js` application.
