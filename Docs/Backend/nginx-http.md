@@ -188,3 +188,8 @@ sudo systemctl restart nginx
 * If you want to serve your application over HTTPS, you can use `Certbot` to obtain a free **SSL certificate** from `Let's Encrypt`. `Certbot` has **plugins** that work with `Nginx`, making it easy to **obtain** and **install certificates**.
 
 By now, you should be **able to access** your `Node.js` **application** through your **domain** *without specifying the port*, and `Nginx` will **proxy the requests** to your `Node.js` application.
+
+## Online Resources:
+
+* [The NGINX Crash Course](https://youtu.be/7VAI73roXaY?si=_E5ezH0rXXCKnPh7)
+* [How to Setup Nginx Reverse Proxy for Node.js Application](https://youtu.be/YH0guj1kFxI?si=hbCpdB29C6nx159y)
