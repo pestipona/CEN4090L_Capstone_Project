@@ -1,4 +1,4 @@
-# How to set up an http reverse proxy for a Node.js application hosted in an AWS EC2 Instance through using Nginx
+# How to set up a http reverse proxy for a Node.js application hosted in an AWS EC2 Instance through using Nginx:
 
 Serving a Node.js application through a web server like Nginx can provide various benefits like better performance, security, and the ability to run multiple applications on the same server.
 
