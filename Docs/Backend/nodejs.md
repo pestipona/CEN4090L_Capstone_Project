@@ -72,6 +72,6 @@ To run this snippet, save it as a `server.js` file and run `node server.js` in y
 
 # More Topics on Node.js
 
-* [Installing Node.js in Windows](./node/callbacks.md)
+* [Installing Node.js in Windows](./node/install-win.md)
 * [What are Callback Functions in Node.js](./node/callbacks.md)
 * [What are Promises in Node.js](./node/promises.md)
